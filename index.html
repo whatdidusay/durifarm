@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover" />
+  <meta name="Author" content="JIWOO" />
+  <meta name="Keywords" content="두리농원, 두리민박, 담양, 죽녹원, 메타세콰이아, 멭타세콰이어, 펜션, 민박, 숙소, 한옥" />
+  <meta name="Description" content="한옥에서 느끼는 평온함" />
+  <meta name="robots" content="ALL" />
+  <meta property="og:title" content="두리농원" />
+  <meta property="og:description" content="한옥에서 느끼는 평온함" />
+  <meta property="og:url" content="https://durifarm.cf/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./img/enter-bamboo.png" />
+  <title>두리농원</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  <link rel="canonical" href="https://durifarm.cf" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/common.js"></script>
+</head>
+
+<body class="noscroll">
+  <!-- loading -->
+  <div class="loading">
+    <div class="load-wrap">
+      <p class="one">바쁜 일상에서</p>
+      <p class="two">잠시,</p>
+      <p class="three">휴식이 필요할때</p>
+      <div class="load-ani">
+        <span>,</span>
+        <span>,</span>
+        <span>,</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- navigation -->
+  <nav class="nav">
+    <ul>
+      <li id="enter" class="active">ENTER</li>
+      <li id="frame">VIEW</li>
+      <li id="facilities">FACILITIES</li>
+      <li id="activity">ACTIVITY</li>
+      <li id="nearby">NEARBY</li>
+      <li id="footer">FOOTER</li>
+    </ul>
+  </nav>
+
+  <!-- <audio src='./sound/ringin.mp3' autoplay loop></audio>
+  <span class="audio"></span> -->
+
+  <!-- enter -->
+  <section class="enter">
+    <div class="wrap">
+
+      <div class="welcome-text">
+        <h1>두리민박</h1>
+        <p>"어서오세요 두리민박입니다"</p>
+      </div>
+      <img src="./img/enter.png" alt="두리네 대문 사진">
+
+      <span class="mouse-ic"></span>
+
+    </div>
+  </section>
+
+  <!-- frame -->
+  <section class="frame">
+    <div class="frame-wrap">
+      <div class="section-title">
+        <h2>조용한 쉼,</h2>
+      </div>
+      <div class="frame-txt-wrap">
+        <p class="frame-txt frame-txt1">넓은 잔디밭과 소나무향,</p>
+        <p class="frame-txt frame-txt2">새들의 지저귐,</p>
+        <p class="frame-txt frame-txt3">오감을 자극하는 주변 환경과 조용한 분위기에서</p>
+        <p class="frame-txt frame-txt4">한옥의 정취를 느껴보세요.</p>
+      </div>
+      <div class="frame-img"></div>
+    </div>
+  </section>
+
+  <!-- facilities -->
+  <section class="facilities">
+    <div class="wrap">
+
+      <div class="section-title">
+        <h2>운영시설</h2>
+      </div>
+
+      <div class="facilities-list">
+        <ul class="clear">
+
+          <li>
+            <img src="./img/enter-bamboo.png" alt="시설 이미지">
+          </li>
+          <li>
+            <img src="./img/building4.png" alt="시설 이미지">
+          </li>
+          <li>
+            <img src="./img/hall2.png" alt="시설 이미지">
+          </li>
+          <li>
+            <img src="./img/pool-building.png" alt="시설 이미지">
+          </li>
+          <li>
+            <img src="./img/wall2.png" alt="시설 이미지">
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- activity -->
+  <section class="activity">
+    <div class="wrap">
+
+      <div class="section-title">
+        <h2>체험활동</h2>
+      </div>
+      <div class="activity-list">
+        <ul>
+
+          <li>
+            <div class="list-wrap">
+              <div class="img-wrap">
+                <img src="./img/activity.png" alt="체험 사진">
+              </div>
+              <div class="title-text">
+                <strong>여러가지 즐거움이 준비되어 있습니다.</strong>
+              </div>
+              <div class="sub-title-text">
+                <strong>각종 체험활동을 통하여 자연이 선사하는 즐거움을 경험해보세요.</strong>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-wrap">
+              <div class="img-wrap">
+                <img src="./img/ssam.png" alt="쌈 수확체험 사진">
+              </div>
+              <div class="title-text">
+                <strong>유기농 쌈 채소 수확체험</strong>
+              </div>
+              <div class="sub-title-text">
+                <strong>화학비료와 농약을 사용하지 않은 깨끗하고 싱싱한 유기농 쌈 채소 수확체험</strong>
+              </div>
+              <div class="des-text">
+                <p>- 금액 : 12,000원 / 1kg</p>
+                <p>- 소요 시간 : 약 20~30분</p>
+                <p>- 가능한 인원 : 1명~ 200명</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-wrap">
+              <div class="img-wrap">
+                <img src="./img/tomato.png" alt="토마토 수확체험 사진">
+              </div>
+              <div class="title-text">
+                <strong>오색 방울토마토 수확체험</strong>
+              </div>
+              <div class="sub-title-text">
+                <strong>농약과 화학비료를 사용하지 않고 깨끗하고 싱싱하게 재배한 유기농 토마토 수확 체험</strong>
+              </div>
+              <div class="des-text">
+                <p>- 금액 : 12,000원 / 1kg</p>
+                <p>- 소요 시간 : 약 30분</p>
+                <p>- 가능한 인원 : 1명~ 100명</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-wrap">
+              <div class="img-wrap">
+                <img src="./img/dyeing.png" alt="염색 체험 사진">
+              </div>
+              <div class="title-text">
+                <strong>천연 염색 체험</strong>
+              </div>
+              <div class="sub-title-text">
+                <strong>스카프, 손수건 등 원단을 천연재료를 사용하여 염색하는 체험</strong>
+              </div>
+              <div class="des-text">
+                <p>- 금액 : 원단 크기에 따라 다름</p>
+                <p>- 소요 시간 : 약 1시간</p>
+                <p>- 가능한 인원 : 5명~ 100명</p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- nearby -->
+  <section class="nearby">
+    <div class="wrap">
+
+      <div class="section-title">
+        <h2>주변 관광지</h2>
+      </div>
+
+      <div class="nearby-list">
+        <ul>
+
+          <li>
+            <div class="list-wrap">
+              <div class="img-wrap">
+                <img src="./img/bike.png" alt="">
+              </div>
+              <div class="title-text">
+                <strong>영산강</strong>
+              </div>
+              <div class="des-text">
+                <p>전라남도의 젖줄이라고 불리우는 영산강의 아름다운 자연경관이 민박 바로 옆에 흐르고 있습니다. 완만하고 잘 관리된 자전거 도로를 따라 여유를 즐겨보세요.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-wrap">
+              <div class="img-wrap">
+                <img src="./img/meta-road.png" alt="">
+              </div>
+              <div class="title-text">
+                <strong>메타세콰이아 길</strong>
+              </div>
+              <div class="des-text">
+                <p>‘2002 아름다운 거리숲’ 대상, ‘한국의 아름다운 길 100선’의 최우수상을 수상한 한국의 아름다운 길입니다.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-wrap">
+              <div class="img-wrap">
+                <img src="./img/museum.png" alt="">
+              </div>
+              <div class="title-text">
+                <strong>기후변화 체험관</strong>
+              </div>
+              <div class="des-text">
+                <p>메타세콰이아길의 매표소에서 표를 끊고 들어가면 디자인이 특이한 건물이 눈에 보인다. 직사각형 대바구니를 형상화한 호남기후변화 체험관은 자연의 중요성과 신재생에너지에 관련된 여러
+                  체험관을 통해 아이들에게 재미있는 공부를 경험하게 해줍니다.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-wrap">
+              <div class="img-wrap">
+                <img src="./img/probance.png" alt="">
+              </div>
+              <div class="title-text">
+                <strong>메타프로방스</strong>
+              </div>
+              <div class="des-text">
+                <p>담양에서 느끼는 이국적인 정취, 메타세콰이아 길 바로 옆에 위치한 프로방스는 휴양지로 유명한 프랑스의 도시 프로방스를 그대로 옮겨놓은듯한 감성을 느껴보세요.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-wrap">
+              <div class="img-wrap">
+                <img src="./img/bamboo-enter.png" alt="">
+              </div>
+              <div class="title-text">
+                <strong>죽녹원</strong>
+              </div>
+              <div class="des-text">
+                <p>약 31만㎡의 공간에 울창한 대나무숲과 가사문학의 산실인 담양의 정자문화 등을 볼 수 있는 시가문화촌입니다.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-wrap">
+              <div class="img-wrap">
+                <img src="./img/riverside.png" alt="">
+              </div>
+              <div class="title-text">
+                <strong>관방제림</strong>
+              </div>
+              <div class="des-text">
+                <p>죽녹원 바로 앞에 위치하고 있는 관방제림은 아름다운 풍경으로 문화재지정 천연기념물 제 366호의 약 2km에 걸친 거대한 풍치림입니다.</p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+      <div class="arrow-guide">
+        <i class="fas fa-chevron-right"></i>
+        <i class="fas fa-chevron-right"></i>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="link-wrap">
+      <a href="https://www.yanolja.com/pension/1000111499" class="link-logo">
+        <img src="./img/yanolja.png" alt="야놀자 로고 이미지">
+      </a>
+      <a href="https://www.goodchoice.kr/product/detail?ano=66568" class="link-logo">
+        <img src="./img/yugi.png" alt="여기어때 로고 이미지">
+      </a>
+    </div>
+    <address>
+      <dl>
+        <dd>
+          <h1>두리농원 한옥민박</h1>
+        </dd>
+      </dl>
+      <dl>
+        <dt><span class="title">대표자</span></dt>
+        <dd><span>김상식</span></dd>
+      </dl>
+      <dl>
+        <dt><span class="title">사업자번호</span></dt>
+        <dd><span>409-81-72020</span></dd>
+      </dl>
+      <dl>
+        <dt><span class="title">주소</span></dt>
+        <dd><span>전라남도 담양군 수북면 황덕길 96-39</span></dd>
+        <dd><span>96-39, Hwangdeok-gil, Subuk-myeon, Damyang-gun, Jeollanam-do</span></dd>
+      </dl>
+      <dl>
+        <dt><span class="title">운영시간</span></dt>
+        <dd><span>22:00 까지</span></dd>
+      </dl>
+      <dl>
+        <dt><span class="title">전화</span></dt>
+        <dd><a href="tel:010-9203-8260">010-9203-8260</a></dd>
+      </dl>
+      <div class="copy-wrap">
+        <p>created by 울산 김씨 36대손 둘째아들 지우</p>
+        <p>copyright&copy; DuriFarm, All Rights Reserved.</p>
+      </div>
+    </address>
+  </section>
+</body>
+
+</html>
